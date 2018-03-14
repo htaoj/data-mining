@@ -5,6 +5,7 @@ from pandas import DataFrame
 
 # 数据库连接参数
 conn = psycopg2.connect(database="qz_rule_test", user="apollo", password="apollo1234", host="119.254.97.11", port="3311")
+conn = psycopg2.connect(database="qz_rule_test", user="apollo", password="apollo****", host="119.254.**.**", port="****")
 cur = conn.cursor()
 cur.execute("select trait_atom_res,applyno from model6_test_csc;")
 rows = cur.fetchall()        # all rows in table
